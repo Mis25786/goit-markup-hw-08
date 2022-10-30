@@ -1,29 +1,45 @@
-.logo__link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
+// .logo__link {
+//   font-family: "Raleway", sans-serif;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   text-decoration: none;
 
-  color: $color-logo-primary;
+//   color: $color-logo-primary;
+// }
+
+// .logo__item {
+//   color: $accent-color;
+// }
+
+// .logo__header {
+//   display: flex;
+//   align-items: center;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//   margin-right: 93px;
+// }
+
+// .logo__footer {
+//   display: inline-block;
+//   text-decoration: none;
+//   color: $footer-primary-text-color;
+//   margin-right: 0px;
+//   margin-bottom: 20px;
+// }
+
+.logo__link {
+  @media screen and (max-width: 768px) {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+
+    color: $color-logo-primary;
+  }
 }
 
 .logo__item {
   color: $accent-color;
-}
-
-.logo__header {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
-
-.logo__footer {
-  display: inline-block;
-  text-decoration: none;
-  color: $footer-primary-text-color;
-  margin-right: 0px;
-  margin-bottom: 20px;
 }

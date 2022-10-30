@@ -1,15 +1,48 @@
-.promo__wrapper {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
+// .promo__wrapper {
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   margin: 0 auto;
 
-  background-color: $color-bg-promo-footer;
-  background-image: url(../images/promo-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 600px;
-  max-width: 1600px;
+//   background-color: $color-bg-promo-footer;
+//   background-image: url(../images/promo-bg.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   height: 600px;
+//   max-width: 1600px;
+// }
+
+// .promo__box {
+//   text-align: center;
+// }
+
+// .promo__title {
+//   margin-bottom: 30px;
+//   max-width: 696px;
+//   text-align: center;
+//   margin-right: auto;
+//   margin-left: auto;
+
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: $color-text-promo;
+// }
+
+.promo__wrapper {
+  @media screen and (max-width: 480px) {
+    padding: 118px 0px;
+    margin: 0 auto;
+    background-color: $color-bg-promo-footer;
+    background-image: url(../../images/mobil/Header\ img\ mobil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    max-width: 480px;
+  }
 }
 
 .promo__box {
@@ -17,16 +50,17 @@
 }
 
 .promo__title {
-  margin-bottom: 30px;
-  max-width: 696px;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $color-text-promo;
+  @media screen and (max-width: 768px) {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $color-text-promo;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 360px;
+    margin-bottom: 30px;
+  }
 }
