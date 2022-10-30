@@ -42,11 +42,14 @@ ul {
   width: 1200px;
 }
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .page-header__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #ececec;
 }
 
 .page-header__nav {

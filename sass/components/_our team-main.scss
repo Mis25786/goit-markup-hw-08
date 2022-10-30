@@ -1,0 +1,88 @@
+.hero__wrapper {
+  padding: 94px 0;
+  background-color: $color-bg-hero;
+}
+
+.hero__title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: $primary-color-title;
+}
+
+.hero__box {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-meta__wrap {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 428px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: $primary-color-bacground;
+}
+
+.hero-meta__icon {
+  margin-bottom: 30px;
+}
+
+.hero-meta__name {
+  text-align: center;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: $primary-color-title;
+}
+
+.hero-meta__text {
+  text-align: center;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.socials__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.socials__icon {
+  fill: $primary-color-socials-clients;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: $secondary-color-socials;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
