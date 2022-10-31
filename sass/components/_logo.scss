@@ -29,17 +29,53 @@
 // }
 
 .logo__link {
-  @media screen and (max-width: 768px) {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: $color-logo-primary;
+
+  @media screen and (max-width: 480px) {
     font-size: 24px;
     line-height: 1.17;
-    text-decoration: none;
-
-    color: $color-logo-primary;
   }
+
+  // @media screen and (min-width: 768px) {
+  // font-size: 24px;
+  // line-height: 1.17;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  // font-size: 26px;
+  // line-height: 1.19;
+  // }
 }
 
 .logo__item {
   color: $accent-color;
+}
+
+// .logo__header {
+//   @media screen and (min-width:1200px) {
+//       display: flex;
+//   align-items: center;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//   margin-right: 93px;
+//   }
+// }
+
+.logo__footer {
+  color: $footer-primary-text-color;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    text-align: center;
+  }
+
+  // @media screen and (min-width:1200px) {
+  // display: inline-block;
+  //   margin-right: 0px;
+  // }
 }
