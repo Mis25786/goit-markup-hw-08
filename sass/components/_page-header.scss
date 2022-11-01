@@ -14,6 +14,20 @@
   border-bottom: 1px solid #ececec;
 }
 
+.page-header__box {
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    display: flex;
+  }
+}
+
 .page-header__nav {
-  padding: 15px 0px;
+  @media screen and (max-width: $mobile) {
+    width: $mobile;
+    padding: 15px 0px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
