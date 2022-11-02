@@ -53,13 +53,14 @@
 // }
 
 .features__wrapper {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
     padding: 60px 0;
   }
 
-  //   @media screen and (min-width: 1200px) {
-  //     padding: 94px 0;
-  //   }
+  @media screen and (min-width: 768px) {
+    padding: 94px 0;
+  }
 }
 
 .features__box {
@@ -81,7 +82,7 @@
   text-transform: uppercase;
   color: $primary-color-title;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: $mobile) {
     text-align: center;
   }
 }

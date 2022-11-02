@@ -55,8 +55,8 @@
 // }
 
 .site-menu {
-  @media screen and (max-width: $mobile) {
-    width: 480px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
     display: none;
   }
 

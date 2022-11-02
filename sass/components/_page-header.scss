@@ -22,7 +22,7 @@
 }
 
 .page-header__nav {
-  @media screen and (max-width: $mobile) {
+  @media screen and (min-width: $mobile) {
     width: $mobile;
     padding: 15px 0px;
   }
