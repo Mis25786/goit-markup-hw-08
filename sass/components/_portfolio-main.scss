@@ -1,16 +1,29 @@
-.sait-section__wrapper {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.sait-section {
+  padding: 94px 0;
 }
 
 .site-filters__box {
   display: flex;
-  margin-bottom: 50px;
   gap: 8px;
-  justify-content: center;
 
   color: $color-nav;
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    row-gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 50px;
+  }
 }
 
 .visually-hidden {
@@ -57,7 +70,7 @@
   }
 }
 
-.card-set__wrapper {
+.card-set {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -65,7 +78,19 @@
 
 .card-set__aside {
   display: block;
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 60px) / 3);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-set__box {

@@ -31,38 +31,3 @@
 //   color: $color-text-promo;
 // }
 
-.promo__wrapper {
-  margin: 0 auto;
-  background-color: $color-bg-promo-footer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media screen and (max-width: 480px) {
-    padding: 118px 0px;
-    background-image: url(../../images/mobil/Header\ img\ mobil.jpg);
-    height: 400px;
-    max-width: 480px;
-  }
-}
-
-.promo__box {
-  text-align: center;
-}
-
-.promo__title {
-  font-weight: 900;
-  color: $color-text-promo;
-  text-transform: uppercase;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    max-width: 360px;
-  }
-}

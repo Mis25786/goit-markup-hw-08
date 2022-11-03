@@ -9,25 +9,3 @@
 // .page-header__nav {
 //   display: flex;
 // }
-
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-
-.page-header__box {
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-    display: flex;
-  }
-}
-
-.page-header__nav {
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-    padding: 15px 0px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
-}
