@@ -2,11 +2,11 @@
   // padding: 94px 0;
   background-color: $color-bg-hero;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     padding: 60px 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding: 94px 0;
   }
 }
@@ -20,11 +20,11 @@
   line-height: 1.17;
   color: $primary-color-title;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 50px;
   }
 }
@@ -50,18 +50,18 @@
 
   background-color: $primary-color-bacground;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 450px;
     height: 622px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
     width: 354px;
     height: 536px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 90px) / 4);
     width: 270px;
     height: 428px;
