@@ -152,38 +152,57 @@
       <section class="galery">
         <div class="galery__wrapper container">
           <h2 class="galery__title">Чим ми займаємося</h2>
+
           <ul class="galery__item">
             <li class="galery__icon">
-              <img
-                src="./images/box1.jpg"
-                alt="людина займаєтся програмуванням сайтів"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                  media="min-width: 1200px"
+                />
+                <img
+                  src="./images/box1.jpg"
+                  alt="людина займаєтся програмуванням"
+                  width="370"
+                />
+              </picture>
+
               <div class="galery__box">
                 <p class="galery__text">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="galery__icon">
-              <img
-                src="./images/box2.jpg"
-                alt="людина займаєтся розробкою мобільних додатків"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                  media="min-width: 1200px"
+                />
+                <img
+                  src="./images/box2.jpg"
+                  alt="людина займаєтся розробкою мобільних додатків"
+                  width="370"
+                />
+              </picture>
+
               <div class="galery__box">
                 <p class="galery__text">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="galery__icon">
-              <img
-                src="./images/box3.jpg"
-                alt="людина робить дизайн для сайта"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                  media="min-width: 1200px"
+                />
+                <img
+                  src="./images/box3.jpg"
+                  alt="людина робить дизайн для сайта"
+                  width="370"
+                />
+              </picture>
+
               <div class="galery__box">
                 <p class="galery__text">Дизайнерські рішення</p>
               </div>
@@ -200,13 +219,36 @@
 
           <ul class="hero__box">
             <li class="hero-meta">
-              <img
-                class="hero-meta__icon"
-                src="./images/igordemjanko.jpg"
-                alt="чоловік в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igordemjanko.jpg    1x,
+                    ./images/igordemjanko-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Ігор-Дем'яненко-tablet-1x     1x,
+                    ./images/tablet/Ігор-Дем'яненко-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Ігор-Дем'яненко-mobile-1x.jpg 1x,
+                    ./images/mobile/Ігор-Дем'яненко-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="hero-meta__icon"
+                  src="./images/igordemjanko.jpg"
+                  alt="чоловік в окулярах"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="hero-meta__name">Ігор Дем'яненко</h3>
               <p class="hero-meta__text">Product Designer</p>
               <div>
@@ -262,13 +304,36 @@
             </li>
 
             <li class="hero-meta">
-              <img
-                class="hero-meta__icon"
-                src="./images/olgarepina.jpg"
-                alt="жінка в окулярах блондинка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olgarepina.jpg    1x,
+                    ./images/olgarepina-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Ольга-Рєпіна-tablet-1x.jpg 1x,
+                    ./images/tablet/Ольга-Рєпіна-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Ольга-Рєпіна-mobile-1x.jpg 1x,
+                    ./images/mobile/Ольга-Рєпіна-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="hero-meta__icon"
+                  src="./images/olgarepina.jpg"
+                  alt="жінка в окулярах блондинка"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="hero-meta__name">Ольга Рєпіна</h3>
               <p class="hero-meta__text">Frontend Developer</p>
               <div>
@@ -324,13 +389,36 @@
             </li>
 
             <li class="hero-meta">
-              <img
-                class="hero-meta__icon"
-                src="./images/mikolatarasov.jpg"
-                alt="чоловік років 30 в синій сорочці"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mikolatarasov.jpg    1x,
+                    ./images/mikolatarasov-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Микола-Тарасов-tablet-1x.jpg 1x,
+                    ./images/tablet/Микола-Тарасов-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Микола-Тарасов-mobile-1x.jpg 1x,
+                    ./images/mobile/Микола-Тарасов-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="hero-meta__icon"
+                  src="./images/mikolatarasov.jpg"
+                  alt="чоловік років 30 в синій сорочці"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="hero-meta__name">Микола Тарасов</h3>
               <p class="hero-meta__text">Marketing</p>
               <div>
@@ -386,13 +474,36 @@
             </li>
 
             <li class="hero-meta">
-              <img
-                class="hero-meta__icon"
-                src="./images/mykhailoermakov.jpg"
-                alt="чоловік в окулярах років 30 в чорній футболці"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhailoermakov.jpg    1x,
+                    ./images/mykhailoermakov-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Михайло-Єрмаков-tablet-2x.jpg 1x,
+                    ./images/tablet/Михайло-Єрмаков-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Михайло-Єрмаков-mobile-1x.jpg 1x,
+                    ./images/mobile/Михайло-Єрмаков-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="hero-meta__icon"
+                  src="./images/mykhailoermakov.jpg"
+                  alt="чоловік в окулярах років 30 в чорній футболці"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="hero-meta__name">Михайло Єрмаков</h3>
               <p class="hero-meta__text">UI Designer</p>
               <div>

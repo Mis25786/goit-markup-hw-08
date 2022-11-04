@@ -1,32 +1,98 @@
-.promo__wrapper {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
-
-  background-color: $color-bg-promo-footer;
-  background-image: url(../images/promo-bg.jpg);
+.promo {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px;
-  max-width: 1600px;
+  margin: 0 auto;
+
+  @include mobile {
+    height: 400px;
+    max-width: 480px;
+
+    background-color: $color-bg-promo-footer;
+    background-image: url(../images/mobil/Header-img-mobil.jpg);
+    @include retina {
+      background-color: $color-bg-promo-footer;
+      background-image: url(../images/mobil/Header-img-mobil-2x.jpg);
+    }
+  }
+
+  @include tablet {
+    height: 400px;
+    max-width: 768px;
+
+    background-color: $color-bg-promo-footer;
+    background-image: url(../images/tablet/Header-img-tablet.jpg);
+    @include retina {
+      background-color: $color-bg-promo-footer;
+      background-image: url(../images/tablet/Header-img-tablet-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    height: 600px;
+    max-width: 1600px;
+
+    background-color: $color-bg-promo-footer;
+    background-image: url(../images/promo-bg.jpg);
+    @include retina {
+      background-color: $color-bg-promo-footer;
+      background-image: url(../images/promo-bg-2x.jpg);
+    }
+  }
 }
 
-.promo__box {
+.promo__wrapper {
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  margin: 0 auto;
   text-align: center;
+
+  // background-color: $color-bg-promo-footer;
+  // background-image: url(../images/promo-bg.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // height: 600px;
+  // max-width: 1600px;
+
+  @include mobile {
+    padding: 118px 0;
+  }
+
+  @include desktop {
+    padding: 200px 0;
+  }
 }
+
+// .promo__box {
+//   text-align: center;
+// }
 
 .promo__title {
   margin-bottom: 30px;
-  max-width: 696px;
+
   text-align: center;
   margin-right: auto;
   margin-left: auto;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $color-text-promo;
+
+  @include mobile {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    max-width: 360px;
+  }
+
+  @include desktop {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }

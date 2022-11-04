@@ -1,6 +1,6 @@
 .promo__button {
-  min-width: 216px;
-  height: 50px;
+  // min-width: 216px;
+  // height: 50px;
   border-radius: 4px;
 
   font-family: "Roboto";
@@ -19,6 +19,16 @@
   &:focus {
     background-color: $buttom-secondary-color;
     color: $color-text-promo;
+  }
+
+  @include mobile {
+    min-width: 200px;
+    height: 50px;
+  }
+
+  @include desktop {
+    min-width: 216px;
+    height: 50px;
   }
 }
 
