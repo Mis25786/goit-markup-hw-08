@@ -26,9 +26,10 @@
   }
 
   @include desktop {
-    display: flex;
-    align-items: baseline;
-    gap: 70px;
+    width: 1200px;
+    // display: flex;
+    // align-items: baseline;
+    // gap: 70px;
     text-align: inherit;
   }
 }
@@ -41,6 +42,11 @@
   @include tablet {
     margin-left: 61px;
   }
+
+  @include desktop {
+    margin: 0;
+    margin-right: 70px;
+  }
 }
 
 .socials-footer {
@@ -50,6 +56,11 @@
 
   @include tablet {
     margin-left: 165px;
+  }
+
+  @include desktop {
+    margin: 0;
+    margin-right: 93px;
   }
 }
 
@@ -61,6 +72,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  display: inline-block;
 
   color: $footer-primary-text-color;
 }
@@ -104,6 +116,10 @@
   @include tablet {
     margin-left: 151px;
   }
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .mailing-footer__title {
@@ -114,6 +130,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  display: inline-block;
 
   color: $footer-primary-text-color;
 }
@@ -143,6 +160,7 @@
     text-align: center;
     width: 358px;
     height: 50px;
+    margin: 0;
   }
 }
 
