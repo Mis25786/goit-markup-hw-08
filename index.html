@@ -24,12 +24,13 @@
 
     <header class="page-header">
       <div class="page-header__box container">
+        <!-- <nav class="page-header__nav"> -->
+        <div class="logo">
+          <a href="./index.html" class="logo__link logo__header"
+            ><span class="logo__item">Web</span>Studio</a
+          >
+        </div>
         <nav class="page-header__nav">
-          <div class="logo">
-            <a href="./index.html" class="logo__link logo__header"
-              ><span class="logo__item">Web</span>Studio</a
-            >
-          </div>
           <ul class="site-menu">
             <li class="site-menu__item">
               <a href="./index.html" class="site-menu__link site-menu--current"
@@ -69,7 +70,30 @@
             >
           </li>
         </ul>
-      </div>
+
+        <button type="button" class="mobil-menu__btn" aria-expanded="false" aria-controls="mobil-menu" is-open data-menu-button>
+          <svg
+            class="mobil-menu__icon"
+            width="40px"
+            height="40px"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./sprite.svg#icon-menu_mobil-open"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./sprite.svg#icon-mennu_mobil-close"
+            ></use>
+          </svg>
+        </button>
+         
+        <div class="mobil-menu container" id="mobil-menu" is-open data-menu>
+          <div class="mobil-menu__nav"></div>
+          <div class="mobil-menu__contacts"></div>
+        </div>
+      
     </header>
 
     <!--головна інформація сайту-->
@@ -236,8 +260,8 @@
                 />
                 <source
                   srcset="
-                    ./images/mobile/Ігор-Дем'яненко-mobile-1x.jpg 1x,
-                    ./images/mobile/Ігор-Дем'яненко-mobile-2x.jpg 2x
+                    ./images/mobil/Ігор-Дем'яненко-mobile-1x.jpg 1x,
+                    ./images/mobil/Ігор-Дем'яненко-mobile-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -321,8 +345,8 @@
                 />
                 <source
                   srcset="
-                    ./images/mobile/Ольга-Рєпіна-mobile-1x.jpg 1x,
-                    ./images/mobile/Ольга-Рєпіна-mobile-2x.jpg 2x
+                    ./images/mobil/Ольга-Рєпіна-mobile-1x.jpg 1x,
+                    ./images/mobil/Ольга-Рєпіна-mobile-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -406,8 +430,8 @@
                 />
                 <source
                   srcset="
-                    ./images/mobile/Микола-Тарасов-mobile-1x.jpg 1x,
-                    ./images/mobile/Микола-Тарасов-mobile-2x.jpg 2x
+                    ./images/mobil/Микола-Тарасов-mobile-1x.jpg 1x,
+                    ./images/mobil/Микола-Тарасов-mobile-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -491,8 +515,8 @@
                 />
                 <source
                   srcset="
-                    ./images/mobile/Михайло-Єрмаков-mobile-1x.jpg 1x,
-                    ./images/mobile/Михайло-Єрмаков-mobile-2x.jpg 2x
+                    ./images/mobil/Михайло-Єрмаков-mobile-1x.jpg 1x,
+                    ./images/mobil/Михайло-Єрмаков-mobile-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />

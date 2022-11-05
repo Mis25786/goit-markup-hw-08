@@ -1,0 +1,62 @@
+.mobil-menu {
+  @media screen and (max-width: 767px) {
+    // display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  background-color: aqua;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+
+  &is-open {
+    display: block;
+  }
+}
+
+.mobil-menu__nav,
+.mobil-menu__contacts {
+  width: 40px;
+  height: 50px;
+}
+
+.mobil-menu__nav {
+  outline: 1px solid black;
+}
+
+.mobil-menu__contacts {
+  outline: 1px solid black;
+}
+
+// кнопка меню мобільного
+
+.mobil-menu__btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.mobil-menu__btn .icon-cross {
+  display: none;
+}
+
+.mobil-menu__btn.is-open .icon-cross {
+  display: block;
+}
+
+.mobil-menu__btn.is-open .icon-menu {
+  display: none;
+}

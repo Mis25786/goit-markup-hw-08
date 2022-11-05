@@ -2,6 +2,10 @@
   display: flex;
   margin-left: auto;
   gap: 30px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .contacts-header__link {

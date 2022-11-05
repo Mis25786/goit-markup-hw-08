@@ -1,11 +1,28 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+
+  position: relative;
 }
+
+// .page-header__box {
+//   display: flex;
+
+// }
+
+// .page-header__nav {
+//   display: flex;
+
+// }
 
 .page-header__box {
   display: flex;
-}
+  align-items: center;
 
-.page-header__nav {
-  display: flex;
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    display: flex;
+  }
 }

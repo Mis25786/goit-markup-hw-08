@@ -13,11 +13,12 @@
 }
 
 .logo__header {
-  display: flex;
+  // display: flex;
+  display: inline-block;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 
 .logo__footer {
