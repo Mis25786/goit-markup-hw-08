@@ -1,5 +1,6 @@
 .site-menu {
   display: flex;
+  margin-left: 87px;
 
   margin-top: 0;
   margin-bottom: 0;
@@ -46,12 +47,12 @@
   }
 }
 
-.site-menu__item {
+.site-menu__item:not(:last-child) {
   margin-right: 50px;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 .site-menu--current {
