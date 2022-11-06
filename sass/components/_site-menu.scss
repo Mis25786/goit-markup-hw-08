@@ -1,12 +1,14 @@
 .site-menu {
-  display: flex;
-  margin-left: 87px;
-
   margin-top: 0;
   margin-bottom: 0;
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @include tablet {
+    display: flex;
+    gap: 50px;
   }
 }
 
@@ -25,6 +27,9 @@
     background-color: $accent-color;
   }
 }
+
+// .site-menu__item {
+// }
 
 .site-menu__link {
   display: block;
@@ -47,13 +52,13 @@
   }
 }
 
-.site-menu__item:not(:last-child) {
-  margin-right: 50px;
+// .site-menu__item:not(:last-child) {
+//   margin-right: 50px;
 
-  // &:last-child {
-  //   margin-right: 0;
-  // }
-}
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
 
 .site-menu--current {
   color: $accent-color;

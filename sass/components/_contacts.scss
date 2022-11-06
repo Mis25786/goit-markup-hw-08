@@ -1,6 +1,6 @@
 .contacts-header {
   display: flex;
-  margin-left: auto;
+
   // gap: 30px;
 
   @media screen and (max-width: 767px) {
@@ -9,13 +9,27 @@
 
   @include tablet {
     display: block;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    display: flex;
+    gap: 30px;
   }
 }
 
-.contacts-header__item:not(:last-child) {
+
+.contacts-header__item {
   @include tablet {
+    &:not(:last-child)
     margin-bottom: 10px;
   }
+
+  // @include desktop {
+  //   display: block;
+  //   margin: 0;
+  //   padding: 0;
+  // }
 }
 
 .contacts-header__link {
@@ -24,7 +38,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
 
   font-weight: 500;
   font-size: 14px;

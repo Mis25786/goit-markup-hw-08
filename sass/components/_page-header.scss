@@ -9,10 +9,17 @@
 
 // }
 
-// .page-header__nav {
-//   display: flex;
+.page-header__nav {
+  display: flex;
 
-// }
+  @include tablet {
+    margin-left: 87px;
+  }
+
+  @include desktop {
+    margin-left: 92px;
+  }
+}
 
 .page-header__box {
   display: flex;
