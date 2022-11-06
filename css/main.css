@@ -93,9 +93,9 @@ ul {
     left: 0;
     width: 100%;
   }
-}
-.mobil-menuis-open {
-  display: block;
+  .mobil-menuis-open {
+    display: block;
+  }
 }
 
 .mobil-menu__nav,

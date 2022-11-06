@@ -5,16 +5,16 @@
     top: 100%;
     left: 0;
     width: 100%;
+
+    &is-open {
+      display: block;
+    }
   }
 
   background-color: aqua;
   padding: 20px;
   text-align: center;
   font-size: 20px;
-
-  &is-open {
-    display: block;
-  }
 }
 
 .mobil-menu__nav,
