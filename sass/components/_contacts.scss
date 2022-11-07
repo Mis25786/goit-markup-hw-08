@@ -18,10 +18,8 @@
   }
 }
 
-
 .contacts-header__item {
   @include tablet {
-    &:not(:last-child)
     margin-bottom: 10px;
   }
 
