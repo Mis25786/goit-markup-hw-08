@@ -3,13 +3,14 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  background-color: $color-bg-promo-footer;
+  background-image: url(../images/mobil/Header-img-mobil.jpg);
+  height: 400px;
 
   @include mobile {
     height: 400px;
     max-width: 480px;
 
-    background-color: $color-bg-promo-footer;
-    background-image: url(../images/mobil/Header-img-mobil.jpg);
     @include retina {
       background-color: $color-bg-promo-footer;
       background-image: url(../images/mobil/Header-img-mobil-2x.jpg);

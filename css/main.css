@@ -213,6 +213,7 @@ ul {
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
+  padding: 0 10px;
 }
 
 .site-menu {
@@ -481,13 +482,14 @@ ul {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  background-color: #2f303a;
+  background-image: url(../images/mobil/Header-img-mobil.jpg);
+  height: 400px;
 }
 @media screen and (min-width: 480px) {
   .promo {
     height: 400px;
     max-width: 480px;
-    background-color: #2f303a;
-    background-image: url(../images/mobil/Header-img-mobil.jpg);
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
