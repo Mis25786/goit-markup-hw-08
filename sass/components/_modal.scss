@@ -27,6 +27,16 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
+
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-btn {
@@ -67,6 +77,16 @@
   display: block;
   width: 528px;
   height: 581px;
+
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-form-title {
@@ -111,6 +131,16 @@
   padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  @include mobile {
+    width: 370px;
+    height: 40px;
+  }
+
+  @include desktop {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .form-label {
@@ -158,6 +188,16 @@
   border-radius: 4px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include mobile {
+    width: 370px;
+    height: 120px;
+  }
+
+  @include desktop {
+    width: 448px;
+    height: 120px;
+  }
 }
 
 .form-comment:hover,

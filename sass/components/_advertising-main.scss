@@ -3,71 +3,61 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  // background: rgba(47, 48, 58, 0.4);
   background-color: $color-bg-promo-footer;
   background-image: url(../images/mobil/Header-img-mobil.jpg);
-  height: 400px;
+  @include retina {
+    // background: rgba(47, 48, 58, 0.4);
+    background-color: $color-bg-promo-footer;
+    background-image: url(../images/mobil/Header-img-mobil-2x.jpg);
+  }
 
   @include mobile {
     height: 400px;
-    max-width: 480px;
-
-    @include retina {
-      background-color: $color-bg-promo-footer;
-      background-image: url(../images/mobil/Header-img-mobil-2x.jpg);
-    }
+    width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 
   @include tablet {
-    height: 400px;
-    max-width: 768px;
+    width: 768px;
 
+    // background: rgba(47, 48, 58, 0.4);
     background-color: $color-bg-promo-footer;
     background-image: url(../images/tablet/Header-img-tablet.jpg);
     @include retina {
+      // background: rgba(47, 48, 58, 0.4);
       background-color: $color-bg-promo-footer;
       background-image: url(../images/tablet/Header-img-tablet-2x.jpg);
     }
   }
 
   @include desktop {
-    height: 600px;
+    width: 100%;
     max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
+    // background: rgba(47, 48, 58, 0.4);
     background-color: $color-bg-promo-footer;
     background-image: url(../images/promo-bg.jpg);
     @include retina {
+      // background: rgba(47, 48, 58, 0.4);
       background-color: $color-bg-promo-footer;
       background-image: url(../images/promo-bg-2x.jpg);
     }
   }
 }
 
-.promo__wrapper {
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  margin: 0 auto;
+.promo__box {
+  display: block;
   text-align: center;
-
-  // background-color: $color-bg-promo-footer;
-  // background-image: url(../images/promo-bg.jpg);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // height: 600px;
-  // max-width: 1600px;
-
-  @include mobile {
-    padding: 118px 0;
-  }
-
-  @include desktop {
-    padding: 200px 0;
-  }
+  justify-content: center;
 }
-
-// .promo__box {
-//   text-align: center;
-// }
 
 .promo__title {
   margin-bottom: 30px;

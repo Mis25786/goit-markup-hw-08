@@ -3,11 +3,6 @@
   background-color: $color-bg-promo-footer;
 }
 
-// .peage-footer__wrapper {
-//   padding: 60px 0;
-//   background-color: $color-bg-promo-footer;
-// }
-
 .peage-footer__container {
   // display: flex;
   // align-items: baseline;
@@ -27,9 +22,6 @@
 
   @include desktop {
     width: 1200px;
-    // display: flex;
-    // align-items: baseline;
-    // gap: 70px;
     text-align: inherit;
   }
 }
