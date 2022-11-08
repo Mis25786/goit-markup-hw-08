@@ -6,13 +6,21 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-  // background: rgba(47, 48, 58, 0.4);
   background-color: $color-bg-promo-footer;
-  background-image: url(../images/mobil/Header-img-mobil.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/mobil/Header-img-mobil.jpg);
   @include retina {
-    // background: rgba(47, 48, 58, 0.4);
     background-color: $color-bg-promo-footer;
-    background-image: url(../images/mobil/Header-img-mobil-2x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/mobil/Header-img-mobil-2x.jpg);
   }
 
   @include mobile {
@@ -25,13 +33,21 @@
   @include tablet {
     width: 768px;
 
-    // background: rgba(47, 48, 58, 0.4);
     background-color: $color-bg-promo-footer;
-    background-image: url(../images/tablet/Header-img-tablet.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet/Header-img-tablet.jpg);
     @include retina {
-      // background: rgba(47, 48, 58, 0.4);
       background-color: $color-bg-promo-footer;
-      background-image: url(../images/tablet/Header-img-tablet-2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/tablet/Header-img-tablet-2x.jpg);
     }
   }
 
@@ -42,13 +58,21 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    // background: rgba(47, 48, 58, 0.4);
     background-color: $color-bg-promo-footer;
-    background-image: url(../images/promo-bg.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/promo-bg.jpg);
     @include retina {
-      // background: rgba(47, 48, 58, 0.4);
       background-color: $color-bg-promo-footer;
-      background-image: url(../images/promo-bg-2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/promo-bg-2x.jpg);
     }
   }
 }
