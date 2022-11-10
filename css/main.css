@@ -81,6 +81,9 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .page-header__box {
@@ -93,6 +96,8 @@ ul {
 .mobil-menu__open-btn {
   margin-left: auto;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 @media screen and (min-width: 768px) {
   .mobil-menu__open-btn {
@@ -101,7 +106,9 @@ ul {
 }
 
 .mobil-menu__close-btn {
-  margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   background-color: transparent;
   border: none;
   display: block;
@@ -113,6 +120,19 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobil-menu__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 .mobil-menu {
   position: fixed;
   top: 0;
@@ -120,8 +140,7 @@ ul {
   width: 100vw;
   height: 100vh;
   list-style: none;
-  padding-top: 10px;
-  padding-bottom: 48px;
+  overflow: auto;
   z-index: 1;
 }
 .mobil-menu .mobil-menu__container {
@@ -138,15 +157,9 @@ ul {
           justify-content: space-between;
   overflow: auto;
 }
-@media screen and (min-width: 480px) {
-  .mobil-menu {
-    width: 480px;
-  }
-}
 
 .mobil-menu__container {
-  padding-left: 40px;
-  padding-bottom: 48px;
+  padding: 48px 15px 48px 40px;
 }
 
 .mobil-menu__nav {
@@ -171,12 +184,12 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobil-menu__contacts {
-  margin-bottom: 64px;
+.contacts-mobil__tel {
+  margin-bottom: 32px;
 }
 
-.contacts-mobil__item:not(:last-child) {
-  margin-bottom: 32px;
+.contacts-mobil__mail {
+  margin-bottom: 64px;
 }
 
 .contacts-mobil__link {
@@ -336,8 +349,13 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-header__item {
+  .contacts-header__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-header__item {
+    margin-bottom: 0;
   }
 }
 
@@ -492,14 +510,14 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobil/Header-img-mobil.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobil/Header-img-mobil.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobil/promo-bg-mobil.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobil/promo-bg-mobil.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .promo {
     background-color: #2f303a;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobil/Header-img-mobil-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobil/Header-img-mobil-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobil/promo-bg-mobil-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobil/promo-bg-mobil-2x.jpg);
   }
 }
 @media screen and (min-width: 480px) {
@@ -514,15 +532,15 @@ ul {
   .promo {
     width: 768px;
     background-color: #2f303a;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/Header-img-tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/Header-img-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/promo-bg-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/promo-bg-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .promo {
     background-color: #2f303a;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/Header-img-tablet-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/Header-img-tablet-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/promo-bg-tablet-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/promo-bg-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -585,12 +603,14 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .features {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -673,7 +693,7 @@ ul {
   line-height: 1.71;
 }
 
-.galery__wrapper {
+.galery {
   padding-bottom: 94px;
 }
 
@@ -735,18 +755,21 @@ ul {
   }
 }
 
-.hero__wrapper {
-  padding: 94px 0;
+.hero {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 @media screen and (min-width: 480px) {
-  .hero__wrapper {
-    padding: 60px 0;
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__wrapper {
-    padding: 94px 0;
+  .hero {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -761,11 +784,15 @@ ul {
 @media screen and (min-width: 480px) {
   .hero__title {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -884,19 +911,21 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__wrapper {
+.clients {
   border-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 @media screen and (min-width: 480px) {
-  .clients__wrapper {
-    padding: 60px 0;
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients__wrapper {
-    padding: 94px 0;
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1230,6 +1259,9 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .peage-footer__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1255,7 +1287,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .footer-box {
-    margin-left: 61px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1272,6 +1304,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .socials-footer {
+    margin-bottom: 0;
     margin-left: 165px;
   }
 }
@@ -1343,7 +1376,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .mailing-footer {
-    margin-left: 151px;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1663,6 +1696,8 @@ ul {
 
 .modal-form-checkbox {
   position: relative;
+  display: inline-block;
+  padding-left: 41px;
   margin-bottom: 30px;
 }
 
@@ -1697,6 +1732,16 @@ ul {
 
 .modal-form-text {
   margin-right: 10px;
+}
+@media screen and (min-width: 480px) {
+  .modal-form-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-text {
+    font-size: 14px;
+  }
 }
 
 .modal-form-link {

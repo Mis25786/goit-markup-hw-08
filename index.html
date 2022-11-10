@@ -43,9 +43,9 @@
 
             <li class="site-menu__item">
               <a href="#" class="site-menu__link">Контакти</a>
-            </li>            
+            </li>
           </ul>
-                  </nav>
+        </nav>
 
         <ul class="contacts-header">
           <li class="contacts-header__item">
@@ -67,81 +67,76 @@
         </ul>
 
         <button class="mobil-menu__open-btn" type="button" data-menu-open>
-          <svg class="mobil-menu__icon"
-            width="40px"
-            height="40px"
-          >
+          <svg class="mobil-menu__icon" width="40px" height="40px">
             <use
               class="icon-menu"
               href="./sprite.svg#icon-menu_mobil-open"
-            ></use>            
-          </svg>
-        </button>
-         
-        <div class="mobil-menu is-hidden" data-menu>          
-            <button type="button" class="mobil-menu__close-btn" data-menu-close>
-          <svg class="mobil-menu__icon"
-            width="40px"
-            height="40px">
-            <use
-              class="icon-cross"
-              href="./sprite.svg#icon-mennu_mobil-close"
             ></use>
           </svg>
         </button>
 
+        <div class="mobil-menu is-hidden" data-menu>
+          <button type="button" class="mobil-menu__close-btn" data-menu-close>
+            <svg class="mobil-menu__icon" width="40px" height="40px">
+              <use
+                class="icon-cross"
+                href="./sprite.svg#icon-mennu_mobil-close"
+              ></use>
+            </svg>
+          </button>
+
           <div class="mobil-menu__container">
-
-          <div class="mobil-menu__box">
             <div class="mobil-menu__nav">
-            <li class="mobil-menu__item">
-              <a href="./index.html" class="mobil-menu__link mobil-menu--current"
-                >Студія</a
-              >
-            </li>
+              <li class="mobil-menu__item">
+                <a
+                  href="./index.html"
+                  class="mobil-menu__link mobil-menu--current"
+                  >Студія</a
+                >
+              </li>
 
-            <li class="mobil-menu__item">
-              <a href="./portfolio.html" class="mobil-menu__link">Портфоліо</a>
-            </li>
+              <li class="mobil-menu__item">
+                <a href="./portfolio.html" class="mobil-menu__link"
+                  >Портфоліо</a
+                >
+              </li>
 
-            <li class="mobil-menu__item">
-              <a href="#" class="mobil-menu__link">Контакти</a>
-            </li>  
-           </div>
-          </div>
-          <div class="mobil-menu__contacts-box">
+              <li class="mobil-menu__item">
+                <a href="#" class="mobil-menu__link">Контакти</a>
+              </li>
+            </div>
             <div class="mobil-menu__contacts">
-            <li class="contacts-mobil__item">
-            <a class="contacts-mobil__link tel" href="tel:+380961111111"
-              >+38 096 111 11 11</a>
-          </li>
+              <li class="contacts-mobil__tel">
+                <a class="contacts-mobil__link tel" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts-mobil__mail">
+                <a
+                  class="contacts-mobil__link mail"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
 
-          <li class="contacts-mobil__item">
-            <a class="contacts-mobil__link mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a>
-          </li>
+              <ul class="mobil-socials">
+                <li class="mobil-socials__item">
+                  <a class="mobil-socials__link" href="#">Instagram</a>
+                </li>
+                <li class="mobil-socials__item">
+                  <a class="mobil-socials__link" href="#">Twitter</a>
+                </li>
+                <li class="mobil-socials__item">
+                  <a class="mobil-socials__link" href="#">Facebook</a>
+                </li>
+                <li class="mobil-socials__item">
+                  <a class="mobil-socials__link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
-          <ul class="mobil-socials">
-                    <li class="mobil-socials__item">
-                      <a class="mobil-socials__link" href="#">Instagram</a>
-                    </li>
-                    <li class="mobil-socials__item">
-                      <a class="mobil-socials__link" href="#">Twitter</a>
-                    </li>
-                    <li class="mobil-socials__item">
-                      <a class="mobil-socials__link" href="#">Facebook</a>
-                    </li>
-                    <li class="mobil-socials__item">
-                      <a class="mobil-socials__link" href="#">LinkedIn</a>
-                    </li>
-          </ul>
-          </div>
-          </div>
-
-           
-          </div>         
-        </div>     
+        </div>
+      </div>
     </header>
 
     <!--головна інформація сайту-->
@@ -150,11 +145,11 @@
       <!--реклама-->
 
       <section class="promo">
-          <div class="promo__box container">
-            <h1 class="promo__title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="promo__button" type="button" data-modal-open>
-              Замовити послугу
-            </button>          
+        <div class="promo__box container">
+          <h1 class="promo__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="promo__button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -306,8 +301,8 @@
                 />
                 <source
                   srcset="
-                    ./images/mobil/Ігор-Дем'яненко-mobile-1x.jpg 1x,
-                    ./images/mobil/Ігор-Дем'яненко-mobile-2x.jpg 2x
+                    ./images/mobil/igordemjanko-mobile-1x.jpg 1x,
+                    ./images/mobil/igordemjanko-mobile-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -384,15 +379,15 @@
                 />
                 <source
                   srcset="
-                    ./images/tablet/Ольга-Рєпіна-tablet-1x.jpg 1x,
-                    ./images/tablet/Ольга-Рєпіна-tablet-2x.jpg 2x
+                    ./images/tablet/olgarepina-tablet-1x.jpg 1x,
+                    ./images/tablet/olgarepina-tablet-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/mobil/Ольга-Рєпіна-mobile-1x.jpg 1x,
-                    ./images/mobil/Ольга-Рєпіна-mobile-2x.jpg 2x
+                    ./images/mobil/olgarepina-mobile-1x.jpg 1x,
+                    ./images/mobil/olgarepina-mobile-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -469,15 +464,15 @@
                 />
                 <source
                   srcset="
-                    ./images/tablet/Микола-Тарасов-tablet-1x.jpg 1x,
-                    ./images/tablet/Микола-Тарасов-tablet-2x.jpg 2x
+                    ./images/tablet/mikolatarasov-tablet-1x.jpg 1x,
+                    ./images/tablet/mikolatarasov-tablet-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/mobil/Микола-Тарасов-mobile-1x.jpg 1x,
-                    ./images/mobil/Микола-Тарасов-mobile-2x.jpg 2x
+                    ./images/mobil/mikolatarasov-mobile-1x.jpg 1x,
+                    ./images/mobil/mikolatarasov-mobile-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -554,15 +549,15 @@
                 />
                 <source
                   srcset="
-                    ./images/tablet/Михайло-Єрмаков-tablet-2x.jpg 1x,
-                    ./images/tablet/Михайло-Єрмаков-tablet-2x.jpg 2x
+                    ./images/tablet/mykhailoermakov-tablet-2x.jpg 1x,
+                    ./images/tablet/mykhailoermakov-tablet-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/mobil/Михайло-Єрмаков-mobile-1x.jpg 1x,
-                    ./images/mobil/Михайло-Єрмаков-mobile-2x.jpg 2x
+                    ./images/mobil/mykhailoermakov-mobile-1x.jpg 1x,
+                    ./images/mobil/mykhailoermakov-mobile-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
@@ -686,11 +681,9 @@
         <!-- лого + контакти -->
 
         <div class="footer-box">
-          <div class="logo">
-            <a href="./index.html" class="logo__link logo__footer">
-              <span class="logo__item">Web</span>Studio</a
-            >
-          </div>
+          <a href="./index.html" class="logo__link logo__footer">
+            <span class="logo__item">Web</span>Studio</a
+          >
           <address>
             <ul class="contact-footer">
               <li class="contact-footer__box">

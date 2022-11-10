@@ -1,15 +1,22 @@
-.hero__wrapper {
-  padding: 94px 0;
+.hero {
   background-color: $color-bg-hero;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   @include mobile {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @include desktop {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
+
+// .hero__wrapper {
+//   background-color: $color-bg-hero;
+// }
 
 .hero__title {
   margin-bottom: 50px;
@@ -22,10 +29,14 @@
 
   @include mobile {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
   }
 
   @include desktop {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 

@@ -12,7 +12,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/mobil/Header-img-mobil.jpg);
+    url(../images/mobil/promo-bg-mobil.jpg);
   @include retina {
     background-color: $color-bg-promo-footer;
     background-image: linear-gradient(
@@ -20,7 +20,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/mobil/Header-img-mobil-2x.jpg);
+      url(../images/mobil/promo-bg-mobil-2x.jpg);
   }
 
   @include mobile {
@@ -39,7 +39,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/tablet/Header-img-tablet.jpg);
+      url(../images/tablet/promo-bg-tablet.jpg);
     @include retina {
       background-color: $color-bg-promo-footer;
       background-image: linear-gradient(
@@ -47,7 +47,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/tablet/Header-img-tablet-2x.jpg);
+        url(../images/tablet/promo-bg-tablet-2x.jpg);
     }
   }
 

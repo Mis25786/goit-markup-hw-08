@@ -1,6 +1,8 @@
 .mobil-menu__open-btn {
   margin-left: auto;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 
   @include tablet {
     display: none;
@@ -8,7 +10,9 @@
 }
 
 .mobil-menu__close-btn {
-  margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   background-color: transparent;
   border: none;
   display: block;
@@ -21,6 +25,13 @@
   }
 }
 
+.mobil-menu__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .mobil-menu {
   position: fixed;
   top: 0;
@@ -28,8 +39,9 @@
   width: 100vw;
   height: 100vh;
   list-style: none;
-  padding-top: 10px;
-  padding-bottom: 48px;
+  // padding-top: 10px;
+  // padding-bottom: 48px;
+  overflow: auto;
 
   z-index: 1;
 
@@ -41,14 +53,15 @@
     overflow: auto;
   }
 
-  @include mobile {
-    width: 480px;
-  }
+  // @include mobile {
+  //   width: 480px;
+  // }
 }
 
 .mobil-menu__container {
-  padding-left: 40px;
-  padding-bottom: 48px;
+  // padding-left: 40px;
+  // padding-bottom: 48px;
+  padding: 48px 15px 48px 40px;
 }
 
 .mobil-menu__nav {
@@ -74,17 +87,12 @@
   }
 }
 
-.mobil-menu--current {
+.contacts-mobil__tel {
+  margin-bottom: 32px;
 }
 
-.mobil-menu__contacts {
+.contacts-mobil__mail {
   margin-bottom: 64px;
-}
-
-.contacts-mobil__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
 }
 
 .contacts-mobil__link {

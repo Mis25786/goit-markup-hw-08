@@ -20,14 +20,14 @@
 
 .contacts-header__item {
   @include tablet {
-    margin-bottom: 10px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
-  // @include desktop {
-  //   display: block;
-  //   margin: 0;
-  //   padding: 0;
-  // }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-header__link {
