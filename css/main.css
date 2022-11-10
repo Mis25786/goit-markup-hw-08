@@ -335,8 +335,9 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .contacts-header {
-    display: block;
+    display: inline-grid;
     margin-left: auto;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -345,17 +346,6 @@ ul {
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts-header__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts-header__item {
-    margin-bottom: 0;
   }
 }
 

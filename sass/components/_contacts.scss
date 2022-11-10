@@ -8,8 +8,9 @@
   }
 
   @include tablet {
-    display: block;
+    display: inline-grid;
     margin-left: auto;
+    gap: 10px;
   }
 
   @include desktop {
@@ -19,15 +20,6 @@
 }
 
 .contacts-header__item {
-  @include tablet {
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-
-  @include desktop {
-    margin-bottom: 0;
-  }
 }
 
 .contacts-header__link {
