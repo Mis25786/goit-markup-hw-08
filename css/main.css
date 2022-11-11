@@ -218,13 +218,10 @@ ul {
   display: flex;
 }
 
-.mobil-socials__item:not(:last-child)::after {
-  content: "";
-  width: 22px;
-  height: 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.mobil-socials__item:not(:last-child):not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .mobil-socials__link {
@@ -234,7 +231,6 @@ ul {
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
-  padding: 0 10px;
 }
 
 .site-menu {

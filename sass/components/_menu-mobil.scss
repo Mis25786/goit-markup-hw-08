@@ -52,15 +52,9 @@
     justify-content: space-between;
     overflow: auto;
   }
-
-  // @include mobile {
-  //   width: 480px;
-  // }
 }
 
 .mobil-menu__container {
-  // padding-left: 40px;
-  // padding-bottom: 48px;
   padding: 48px 15px 48px 40px;
 }
 
@@ -120,12 +114,10 @@
 }
 
 .mobil-socials__item:not(:last-child) {
-  &::after {
-    content: "";
-    width: 22px;
-    height: 0;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -136,5 +128,4 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
-  padding: 0 10px;
 }
