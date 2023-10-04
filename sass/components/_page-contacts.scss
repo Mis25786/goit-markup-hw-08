@@ -1,0 +1,17 @@
+.wrapper-contacts {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.page-contacts {
+  flex: 1 1 auto;
+}
+
+.page-contacts__content {
+}
+
+.contacts__content {
+  margin-top: 50px;
+}
